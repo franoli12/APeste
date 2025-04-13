@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APeste.</title>
+  <style>
+   
+/*fontes e tals*/
+   body {
+      font-family: 'Chakra Petch', sans-serif;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      text-align: justify;
+      text-justify:auto;
+      text-shadow: 2px 2px 3px #a55e5e;
+      margin: 0;
+      padding: 0;
+      font-size: larger;
+      background-image: url(img/fundo\ blah\ blah.png);
+      background-color: #1f1f1f;
+    }
+    /*h1, h2, p e div*/
+    h1 {
+      font-family: 'Chakra Petch', sans-serif;
+      color: rgb(0, 0, 0);
+      font-weight: 900;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(255, 255, 255);
+      margin: 0;
+      padding: 0;
+      font-size: xx-large;
+      text-align: center;
+      background-image: linear-gradient(to bottom,#000000,rgb(26, 26, 26)) ;
+      border-radius:2cm
+    }
+    h2 {
+      font-family: 'Chakra Petch', sans-serif;
+      color: white;
+      margin-left: 50px;
+      margin-right: 50px;
+      padding: 25px;
+      font-size: xx-large;
+      text-align: center;
+      background-color: #000000;
+      border-radius: 1cm;
+    }
+    p {
+      margin-right: 4cm;
+      margin-left: 4cm;
+    }
+    div {
+      font-family: 'Chakra Petch', sans-serif; 
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-style: italic;
+      font-size: 50px;
+      text-align: center;
+    }
+    /*o rodape de cima la*/
+    header {
+      background-image: linear-gradient(to bottom,#000000,#272727) ;
+      font-size: x-large;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+      gap: 3rem;
+    }
+    /*o texto do rodape*/
+    header a {
+      color: rgb(0, 0, 0);
+      font-weight: 900;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(255, 255, 255);
+      text-decoration-style: none;
+      cursor: pointer;
+    }
+    /*tamanho*/
+    main {
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a onclick="navigate('truque')"> <img src="img/monochrome-modified.png" alt="icon" width="70" height="70"><div>APeste.</a></div>
+    <a onclick="navigate('inicio')">Introdução</a>
+    <a onclick="navigate('abobora')">Causas</a>
+    <a onclick="navigate('abacate')">Impactos</a>
+    <a onclick="navigate('abacaxi')">Consequências</a>
+
+  </header>
+
+  <main id="content">
+      <h1>Bem-vindo à APeste! </h1>
+
+    <p>O seu site sobre o híperfoco na peste negra, por algum motivo. </p>
+
+    <p> Este site tem como objetivo agrupar, pelo menos o básico, do conteúdo da época da Peste Negra, para aficionados como nós. </p>
+
+    <p> Escolha seu tópico acima. </p>
+
+    <h2><img src="img/monochrome.png" width="400" height="400"></h2>
+  </main>
+
+  <script>
+    const pages = {
+      truque: `
+      
+      <h1>Bem-vindo à APeste! </h1>
+
+    <p>O seu site sobre o híperfoco na peste negra, por algum motivo. </p>
+
+    <p> Este site tem como objetivo agrupar, pelo menos o básico, do conteúdo da época da Peste Negra, para aficionados como nós. </p>
+
+    <p> Escolha seu tópico acima. </p>
+
+    <h2><img src="img/monochrome.png" width="400" height="400"></h2>
+      `,
+
+      inicio: `
+        
+        <h1>O que foi a Peste Negra?</h1>
+
+        <p>A Peste Negra, também conhecida como peste bubônica, foi uma pandemia devastadora
+que atacou a Europa no século XIV. Causada pela bactéria “Yersinia pestis”, acredita-se que
+tenha se originado na Ásia Central, espalhando-se pela Europa entre 1347 e 1353. </p>
+
+<p> Estima-se que tenha dizimado cerca de um terço da população europeia, resultando em
+aproximadamente 25 milhões de mortes.</p>
+
+    <h2><img src="img/intro.png" width="600" height="400"></h2>
+      `,
+
+      abobora: `
+
+        <h1>Causas e Transmissão:</h1>
+
+        <p> A transmissão da peste ocorreu principalmente através das pulgas
+que infestavam ratos infectados. Ao picarem humanos, essas pulgas transmitiam a bactéria,
+levando ao desenvolvimento dos sintomas característicos, como febre alta, calafrios e
+inchaço doloroso dos linfonodos, conhecidos como bubões.</p>
+
+    <h2><img src="img/causa.png" width="500" height="400"></h2>
+      `,
+
+      abacate: `
+
+        <h1>Impactos Sociais e Econômicos:</h1>
+
+        <p> A drástica redução populacional teve efeitos profundos
+na sociedade medieval. A escassez de mão de obra resultante aumentou o valor dos
+trabalhadores, levando a uma elevação nos salários e contribuindo para o enfraquecimento
+do sistema feudal. </p>
+
+<p> Além disso, a diminuição da produção agrícola causou escassez de
+alimentos, provocando fome generalizada.</p>
+
+    <h2><img src="img/impactos.png" width="550" height="400"></h2>
+      `,
+
+      abacaxi: `
+
+        <h1>Consequências a Longo Prazo:</h1>
+
+        <p> A Peste Negra provocou mudanças significativas na
+estrutura social e econômica da Europa. Com a redução da população, houve uma
+redistribuição de terras e riquezas, permitindo que os sobreviventes tivessem acesso a
+melhores condições de vida. </p>
+
+<p> No entanto, a recuperação demográfica foi lenta, levando
+séculos para que a população europeia retornasse aos níveis anteriores à pandemia.</p>
+
+<p> Em resumo, a Peste Negra foi um marco histórico que transformou profundamente a
+sociedade europeia, cujos efeitos podem ser sentidos até os dias atuais.</p>
+
+    <h2><img src="img/consequencias.png" width="600" height="400"></h2>
+      `,
+  
+    };
+
+    function navigate(page) {
+      const content = document.getElementById("content");
+      content.innerHTML = pages[page] || "<h1>Página não encontrada</h1>";
+    }
+  </script>
+</body>
+</html>
